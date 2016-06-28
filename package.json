@@ -1,0 +1,26 @@
+{
+  "name": "foundation-hapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directory": "^0.1.0",
+    "good": "^7.0.1",
+    "good-console": "^6.1.2",
+    "good-squeeze": "^4.0.0",
+    "handlebars": "^4.0.5",
+    "hapi": "^13.4.1",
+    "hapijs-react-views": "^0.7.3",
+    "hoek": "^4.0.1",
+    "inert": "^4.0.0",
+    "react": "^0.13.3",
+    "views": "^1.0.2",
+    "vision": "^4.1.0"
+  },
+  "description": ""
+}

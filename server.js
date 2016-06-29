@@ -4,13 +4,11 @@ const Inert = require('inert');
 const Hoek = require('hoek');
 var engine = require('hapijs-react-views')();
 
-
-
 const server = new Hapi.Server({
     connections: {
         routes: {
             files: {
-                relativeTo: Path.join(__dirname, 'public')
+                relativeTo: Path.join(__dirname, '/public')
             }
         }
     }
@@ -24,24 +22,17 @@ server.register(require('vision'), (err) => {
 Hoek.assert(!err,err);
 
 server.views({
-    defaultExtension: 'jsx',
+    defaultExtension: 'html',
     engines: {
         jsx: engine, // support for .jsx files
-        js: engine // support for .js
-    }
+        js: engine, // support for .js
+        html: require('handlebars'),
+    },
+    relativeTo: __dirname,
+    path:'public'
 });
 
-server.route({
-    method: 'GET',
-    path: '/{param*}',
-    handler: {
-      directory: {
-            path: '.',
-            redirectToSlash: true,
-            index: true
-        }
-    }
-});
+server.route(require('./lib/routes'));
 
 });
 

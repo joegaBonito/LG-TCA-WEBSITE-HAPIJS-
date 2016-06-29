@@ -1,0 +1,14 @@
+{
+  "name": "foundation-hapi",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/joegaBonito/Hapi-LGCNS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

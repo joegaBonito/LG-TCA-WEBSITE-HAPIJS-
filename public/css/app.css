@@ -1,6 +1,11 @@
 .body {
   background-color: #fff;
 }
+
+.item {
+  margin:0px;
+}
+
 .navbar {
     position: relative;
     min-height: 50px;

@@ -18,9 +18,13 @@
     "hapijs-react-views": "^0.7.3",
     "hoek": "^4.0.1",
     "inert": "^4.0.0",
-    "react": "^0.13.3",
+    "module_name": "^1.0.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "views": "^1.0.2",
-    "vision": "^4.1.0"
+    "vision": "^4.1.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "description": ""
 }

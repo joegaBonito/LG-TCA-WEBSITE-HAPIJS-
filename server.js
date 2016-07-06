@@ -2,8 +2,11 @@ const Path = require('path');
 const Hapi = require('hapi');
 const Inert = require('inert');
 const Hoek = require('hoek');
+const Vision = require('vision');
 var engine = require('hapijs-react-views')();
 
+
+//Adding Static Content Files + Server Configuration
 const server = new Hapi.Server({
     connections: {
         routes: {
@@ -17,7 +20,8 @@ server.connection({ port: 3002 });
 
 server.register(Inert, () => {});
 
-server.register(require('vision'), (err) => {
+//Rendering Views
+server.register(Vision, (err) => {
 
 Hoek.assert(!err,err);
 
@@ -34,10 +38,12 @@ server.views({
     partialsPath: './public/views/partials'
 });
 
+//Adding Routes
 server.route(require('./lib/routes'));
 
 });
 
+//Starting the server
 server.start((err) => {
 
     if (err) {

@@ -1,47 +1,57 @@
 .carousel-inner {
-  height: 415px;
+    width: 100%;
+    padding-bottom: 0%
 }
 
-.carousel-inner>.active {
-  display:inline-block;
-  padding: 0px;
-  margin:0px;
-  position:relative;
+.active {
+    width: 100%;
+    padding-bottom: 0%
 }
 
 #banner1 {
-  height:415px;
-  background-image: url("/img/m1.jpg");
+    width: 100%;
+    padding-bottom: 17%;
+    background-image: url("/img/m1.jpg");
+    background-size: auto;
 }
 
-#banner1 > p {
-  color:#FFF;
-  position: relative;
-  left:800px;
-  top:100px;"
+#banner1 div {
+    color: #FFF;
+    position: relative;
+    left:70%;
+    top: 100px;
+    width:200px;
+    display:inline-block;
 }
 
 #banner2 {
-  height:415px;
-  background-image: url("/img/m2.jpg");
+    width:100%;
+    padding-bottom:18%;
+    background-image: url("/img/m2.jpg");
+    background-size: auto;
 }
 
-#banner2 > p {
-  color:#333333;
-  position: relative;
-  left:300px;
-  top:100px;"
+#banner2  div {
+    color: #333333;
+    position: relative;
+    left: 20%;
+    top: 100px;
+    display:inline-block;
 }
 
 #banner3 {
-  height:415px;
-  background-image: url("/img/m3.jpg");
-  text-align: center;
+    width:100%;
+    padding-bottom:22%;
+    background-image: url("/img/m3.jpg");
+    text-align: center;
+    background-size: auto;
 }
-#banner3 > p {
-  color:#FFF;
-  position: relative;
-  top: 100px;
+
+#banner3  div {
+    color: #FFF;
+    position: relative;
+    top: 100px;
+    display:inline-block;
 }
 
 #button1,
@@ -59,13 +69,13 @@
 }
 
 #button2 {
-  color:#333333;
-  background-color:transparent;
-  border-color:#333333;
+    color: #333333;
+    background-color: transparent;
+    border-color: #333333;
 }
 
 #button2:hover {
-    color:#ffffff;
+    color: #ffffff;
     background-color: #333333;
     border-color: #333333;
 }

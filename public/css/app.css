@@ -1,9 +1,9 @@
 .body {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .item {
-  margin:0px;
+    margin: 0px;
 }
 
 .navbar {
@@ -22,31 +22,42 @@
 .navbar-default .navbar-brand {
     color: #fff;
 }
-.navbar-default .navbar-nav>li>a {
-  color: #fff;
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-  background-color: #ddd;
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #ddd;
 }
 
 .banner-title {
-  position: relative;
-  left:30px;
+    position: relative;
+    left: 30px;
 }
 
 .carousel-caption {
-  text-align: center;
-  position:relative;
-  bottom:400px;
-  left: 50px;
-  opacity:0;
-  animation: fadingText ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay:0.7s;
+    position: absolute;
+    top: 150px;
+    right:20%;
+    opacity: 0;
+    animation: fadingText ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
 }
 
-@keyframes fadingText {
-  from {opacity:0;} to {opacity:1;}
-}
+    @keyframes fadingText {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }

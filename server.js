@@ -13,7 +13,7 @@ const server = new Hapi.Server({
         }
     }
 });
-server.connection({ port: 3001 });
+server.connection({ port: 3002 });
 
 server.register(Inert, () => {});
 
@@ -29,7 +29,9 @@ server.views({
         html: require('handlebars'),
     },
     relativeTo: __dirname,
-    path:'public'
+    path:'public',
+    layoutPath:'./public/views/layouts',
+    partialsPath: './public/views/partials'
 });
 
 server.route(require('./lib/routes'));
